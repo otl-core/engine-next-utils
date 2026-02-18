@@ -1,0 +1,56 @@
+{
+  "name": "@otl-core/engine-next-utils",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Next.js server-side utilities for OTL CMS engine",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "nextjs",
+    "server",
+    "utilities",
+    "typescript",
+    "cms"
+  ],
+  "author": "OTL Core",
+  "license": "PolyForm-Shield-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otl-core/engine-next-utils.git"
+  },
+  "dependencies": {
+    "@otl-core/cms-api": "^1.0.0",
+    "@otl-core/cms-types": "^1.0.0",
+    "@otl-core/cms-utils": "^1.0.0",
+    "server-only": "^0.0.1"
+  },
+  "peerDependencies": {
+    "next": ">=14.0.0",
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  }
+}
