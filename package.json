@@ -1,6 +1,6 @@
 {
   "name": "@otl-core/engine-next-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Next.js server-side utilities for OTL CMS engine",
   "main": "./dist/index.cjs",
@@ -36,9 +36,9 @@
     "url": "https://github.com/otl-core/engine-next-utils.git"
   },
   "dependencies": {
-    "@otl-core/cms-api": "^1.0.0",
-    "@otl-core/cms-types": "^1.0.0",
-    "@otl-core/cms-utils": "^1.0.0",
+    "@otl-core/cms-api": "^1.0.1",
+    "@otl-core/cms-types": "^1.0.1",
+    "@otl-core/cms-utils": "^1.0.1",
     "server-only": "^0.0.1"
   },
   "peerDependencies": {
