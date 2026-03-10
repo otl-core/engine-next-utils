@@ -1,24 +1,13 @@
 /**
  * A/B/n Variant Resolver -- Next.js-specific
  *
- * Re-exports all framework-agnostic resolver logic from @otl-core/cms-utils
- * and adds the Next.js-specific `getABnBucket` helper that reads the bucket
- * value from the `x-abn-bucket` request header (set by the engine's proxy middleware).
+ * Reads the bucket value from the `x-abn-bucket` request header
+ * (set by the engine's proxy middleware).
+ *
+ * Framework-agnostic resolver logic lives in @otl-core/cms-utils.
  */
 
 import { headers } from "next/headers";
-export {
-  isMultivariateContent,
-  resolveEntryVariant,
-  resolveFormVariantsInSections,
-  resolvePageVariant,
-  selectVariant,
-} from "@otl-core/cms-utils";
-export type {
-  MultivariateFormBlockData,
-  MultivariatePageContent,
-  VariantConfig,
-} from "@otl-core/cms-utils";
 
 /**
  * Read the A/B/n bucket value from the `x-abn-bucket` request header.

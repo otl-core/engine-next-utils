@@ -42,21 +42,7 @@ export {
 // Password verification
 export { hasValidPasswordCookie } from "./password-check.utils";
 
-// A/B/n resolver (Next.js-specific + re-exports from cms-utils)
-export {
-  getABnBucket,
-  isMultivariateContent,
-  resolveEntryVariant,
-  resolveFormVariantsInSections,
-  resolvePageVariant,
-  selectVariant,
-} from "./abn-resolver.utils";
-
-export type {
-  MultivariateFormBlockData,
-  MultivariatePageContent,
-  VariantConfig,
-} from "./abn-resolver.utils";
+export { getABnBucket } from "./abn-resolver.utils";
 
 // Locale detection (server-side)
 export { detectLocaleFromRequest } from "./detect-locale-server.utils";
