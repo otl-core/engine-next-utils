@@ -90,6 +90,7 @@ export interface SiteContext {
   siteUrl: string;
   siteName: string;
   siteDescription?: string;
+  titleSeparator: string;
   locale: string;
   ogLocale: string;
   hreflang?: Record<string, string>;
@@ -124,6 +125,7 @@ export function buildSiteContext(
       supported_locales,
       default_locale,
     ),
+    titleSeparator: configs.website.title_separator || "|",
     twitterHandle: configs.website.twitter_handle || undefined,
   };
 }
